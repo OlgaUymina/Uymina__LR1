@@ -27,20 +27,8 @@ int main() {
                 cin >> num1 >> num2;
                 cout << "Результат: " << num1 * num2 << endl;
                 break;
-            case 2: // Деление
-                cout << "Введите два числа для деления: ";
-                cin >> num1 >> num2;
-                // Проверка на деление на ноль
-                if (num2 != 0) {
-                    cout << "Результат: " << num1 / num2 << endl;
-                } else {
-                    cout << "Ошибка: Деление на ноль!" << endl;
-                }
-                break;
-            default:
-                cout << "Неверный выбор. Пожалуйста, выберите 1, 2 или 0." << endl;
-                break;
         }
+        std::cout << std::endl; // Разделение между итерациями
     }
 
     return 0;
