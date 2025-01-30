@@ -27,6 +27,15 @@ int main() {
                 cin >> num1 >> num2;
                 cout << "Результат: " << num1 * num2 << endl;
                 break;
+            case 2:
+                std::cout << "Введите два числа для деления: ";
+                std::cin >> num1 >> num2;
+                if (num2 != 0) {
+                    std::cout << "Результат: " << num1 << " / " << num2 << " = " << num1 / num2 << std::endl;
+                } else {
+                    std::cout << "Ошибка: Деление на ноль!" << std::endl;
+                }
+                break;
         }
         std::cout << std::endl; // Разделение между итерациями
     }
