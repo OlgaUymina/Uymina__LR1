@@ -36,6 +36,11 @@ int main() {
                     std::cout << "Ошибка: Деление на ноль!" << std::endl;
                 }
                 break;
+            case 0:
+                std::cout << "Закрытие приложения..." << std::endl;
+                return 0;
+            default:
+                std::cout << "Неверный выбор. Пожалуйста, попробуйте снова." << std::endl;
         }
         std::cout << std::endl; // Разделение между итерациями
     }
